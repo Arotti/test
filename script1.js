@@ -6,19 +6,17 @@ let time = prompt("введите даду в формате YYYY-MM-DD", "");
 let appData = {
     budget: money,
     timeData: time,
-    expenses: {
-        "ответ на первый вопрос": null,
-        "ответ на второй вопрос": null
-    },
+    expenses: {},
     optionalExpenses:{},
     income:[],
     savings: false
 };
-console.log(appData.budget);
-console.log(appData.timeData);
-appData.expenses["ответ на первый вопрос"] = prompt("Введите обязательную статью расходов в этом месяце", "");
-appData.expenses["ответ на второй вопрос"] = prompt("Во сколько обойдется?", "");
-console.log(appData.expenses["ответ на первый вопрос"]);
-console.log(appData.expenses["ответ на второй вопрос"]);
-//console.log(appData.budget/30);
-alert(appData.budget/30);
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    a2 = prompt("Во сколько обойдется?", ''),
+    a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    a4 = prompt("Во сколько обойдется?", '');
+
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
+
+alert(appData.budget / 30);
